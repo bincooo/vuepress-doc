@@ -10,11 +10,11 @@ actions:
     link: /guide/
     type: primary
 
-  - text: 博客
+  - text: 博客 📔
     link: /article/
 
-  - text: 网盘
-    link: /alist
+  - text: 网盘 🪫
+    link: https://www.icu-web.tk:8082/alist
 
 features:
   - title: 阿里小站
