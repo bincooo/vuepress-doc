@@ -33,4 +33,4 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.global }}
         BRANCH: gh-pages
-        FOLDER: docs/.vuepress/dist
+        FOLDER: ./docs/.vuepress/dist
