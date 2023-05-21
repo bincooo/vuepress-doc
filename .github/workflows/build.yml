@@ -27,3 +27,7 @@ jobs:
         #cache-dependency-path: './package-lock.json'
     - run: npm i
     - run: npm run docs:build
+    - uses: actions/upload-artifact@v3
+      with:
+        name: docs
+        path: build/*
