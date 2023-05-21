@@ -11,5 +11,5 @@ icon: solid fa-bookmark
 	- [k8s指令](markdown/k8s指令.md) 
 	- [nginx](markdown/nginx.md) 
 	- [oracle安装](markdown/oracle安装.md) 
-	- [cloudflared免实名使用域名：80、443](cloudflared/cloudflared免实名使用域名.md)
+	- [cloudflared免实名使用域名：80、443](markdown/cloudflared免实名使用域名.md)
 
