@@ -1,5 +1,5 @@
 ---
-title: 常见证书说明
+title: cloudflared免实名给服务器使用域名
 head:
   - - meta
     - name: referrer
