@@ -27,7 +27,10 @@ jobs:
         #cache-dependency-path: './package-lock.json'
     - run: npm i
     - run: npm run docs:build
-    - uses: actions/upload-artifact@v3
-      with:
-        name: docs
-        path: build/*
+
+    - name: Deploy to pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.global }}
+          BRANCH: gh-pages
+          FOLDER: docs/.vuepress/dist
