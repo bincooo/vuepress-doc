@@ -29,8 +29,8 @@ jobs:
     - run: npm run docs:build
 
     - name: Deploy to pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.global }}
-          BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.global }}
+        BRANCH: gh-pages
+        FOLDER: docs/.vuepress/dist
