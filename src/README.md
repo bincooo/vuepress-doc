@@ -14,10 +14,10 @@ actions:
     link: /article/
 
   - text: 网盘 🪫
-    link: www.1micro.top/alist
+    link: https://www.1micro.top/alist
 
-  - text: NovelAI tag 🏷
-    link: www.yuque.com/longyuye/lmgcwy
+  - text: TAG 🏷
+    link: https://www.yuque.com/longyuye/lmgcwy
 
 features:
   - title: 阿里小站
