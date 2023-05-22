@@ -10,8 +10,8 @@ export const zhNavbar = navbar([
       {
         text: "程序猿の烂笔头",
         icon: "creative",
-        prefix: "coder/",
-        children: ["oracle安装", "nginx", { text: "more...", link: "" }],
+        prefix: "markdown/",
+        children: ["cloudflared免实名...", "oracle安装", "nginx", { text: "more...", link: "" }],
       }
     ],
   },
