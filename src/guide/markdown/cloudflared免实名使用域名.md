@@ -31,7 +31,7 @@ head:
 
    显示 `Installed successfully` 即安装完成：
 
-   <img src="https://article.biliimg.com/bfs/article/e1c168087c912cdc7893200ee4e4481ce2d7d954.png" style="zoom:50%;" />
+<img src="https://article.biliimg.com/bfs/article/e1c168087c912cdc7893200ee4e4481ce2d7d954.png" style="zoom:50%;" />
 
    
 

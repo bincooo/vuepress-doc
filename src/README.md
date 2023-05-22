@@ -14,7 +14,10 @@ actions:
     link: /article/
 
   - text: 网盘 🪫
-    link: https://www.icu-web.tk:8082/alist
+    link: www.1micro.top/alist
+
+  - text: NovelAI tag 🏷
+    link: www.yuque.com/longyuye/lmgcwy
 
 features:
   - title: 阿里小站
