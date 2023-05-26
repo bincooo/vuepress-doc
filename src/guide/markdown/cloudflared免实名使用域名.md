@@ -6,7 +6,6 @@ head:
       content: no-referrer
 ---
 
-### cloudflared免实名给服务器使用域名
 
 1. 准备工作
 
