@@ -1,4 +1,8 @@
 {
+  "author": {
+    "name" : "bincooo",
+    "url" : "https://zhiqianduan.com/"
+  },
   "name": "vuepress-doc",
   "version": "2.0.0",
   "description": "折戟沉沙、丿の小站",
