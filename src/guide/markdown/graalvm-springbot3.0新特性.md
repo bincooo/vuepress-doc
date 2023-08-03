@@ -63,10 +63,20 @@ alias jdk19="useJdk jdk19"
 alias gdk17="useJdk gdk17"
 
 # 若不需要指定版本把下面一行注释，Mac会识别JavaVirtualMachines目录下的jdk，并将最新版作为默认
-useJdk gdk17
 # 切换时在 控制台输入 jdk11 或 gdk17 即可
-
+# useJdk gdk17
 ```
+
+自动加载：`vim ~/.zshrc` 或者 `vim ~/.bashrc` 添加如下代码
+```bash
+for file in /etc/bashrc.d/*
+do
+  if [ -f $file ];then
+    source "$file"
+  fi
+done
+```
+会在进入控制台时加载`/etc/bashrc.d/`下的脚本
 
 在控制台输入指令查看是否配置成功
 
