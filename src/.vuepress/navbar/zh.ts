@@ -11,7 +11,7 @@ export const zhNavbar = navbar([
         text: "程序猿の烂笔头",
         icon: "creative",
         prefix: "markdown/",
-        children: ["cloudflared免实名...", "oracle安装", "nginx", { text: "more...", link: "" }],
+        children: [{ text: "cloudflared免实名...", link: "cloudflared免实名给服务器使用域名" }, "oracle安装", "nginx", { text: "more...", link: "" }],
       }
     ],
   },
