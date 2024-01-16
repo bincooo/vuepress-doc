@@ -25,6 +25,21 @@ features:
     details: 阿里小站-阿里云盘资源共享站 - 影视、动漫、书籍、夸克网盘、百度网盘、迅雷云盘 ...
     link: https://alyunpan.com
 
+  - title: アニメ新番組
+    icon: brands fa-youtube
+    details: アニメ新番組 - 次世代アニメサイト 异次元追番...
+    link: https://bangumi.online
+
+  - title: zzzfun动漫视频网
+    icon: brands fa-youtube
+    details: zzzfun动漫视频网
+    link: http://www.zzzfun.one
+
+  - title: iLoveIMG
+    icon: brands fa-youtube
+    details: 图像文件在线编辑工具
+    link: https://www.iloveimg.com/zh-cn
+
   - title: 影视森林
     icon: brands fa-slideshare
     details: 影视森林——观影第一站 - 优质站点、在线视频、影视APP、特色影视站、电视APP、音乐资源 ...
