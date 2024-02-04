@@ -45,10 +45,10 @@ features:
     details: 影视森林——观影第一站 - 优质站点、在线视频、影视APP、特色影视站、电视APP、音乐资源 ...
     link: https://www.549.tv
 
-  - title: Markdown 增强
+  - title: Clash代理工具
     icon: brands fa-markdown
-    details: 新增文字对齐、上下角标、脚注、标记、任务列表、数学公式、流程图、图表与幻灯片支持
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/
+    details: Clash代理软件是一款广受欢迎的开源网络代理工具，被亲切地称为"小猫咪"。作为众多GUI客户端（如Clash for Windows、Clash for Android、ClashX等）的核心引擎，Clash致力于帮助用户便捷地管理和配置网络代理服务 ...
+    link: https://www.clash.la/releases
 
   - title: 布局增强
     icon: solid fa-layer-group
