@@ -47,7 +47,7 @@ features:
 
   - title: Clash代理工具
     icon: brands fa-markdown
-    details: Clash代理软件是一款广受欢迎的开源网络代理工具，被亲切地称为"小猫咪"。作为众多GUI客户端（如Clash for Windows、Clash for Android、ClashX等）的核心引擎，Clash致力于帮助用户便捷地管理和配置网络代理服务 ...
+    details: Clash代理软件是一款广受欢迎的开源网络代理工具，被亲切地称为"小猫咪"。作为众多GUI客户端 ...
     link: https://www.clash.la/releases
 
   - title: 布局增强
