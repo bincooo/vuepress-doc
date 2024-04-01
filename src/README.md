@@ -50,10 +50,10 @@ features:
     details: Clash代理软件是一款广受欢迎的开源网络代理工具，被亲切地称为"小猫咪"。作为众多GUI客户端 ...
     link: https://www.clash.la/releases
 
-  - title: 布局增强
+  - title: JS混淆代码还原
     icon: solid fa-layer-group
-    details: 添加路径导航、页脚、改进的导航栏、改进的页面导航等。
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/layout/
+    details: 让混淆不再成为逆向分析中的绊脚石 https://github.com/kuizuo/js-deobfuscator
+    link: https://js-deobfuscator.vercel.app/
 
   - title: 浏览量与评论
     icon: comment
