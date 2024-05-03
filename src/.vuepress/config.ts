@@ -9,7 +9,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "折戟沉沙、丿",
-  description: "vuepress-theme-hope 的文档演示",
+  description: "折戟沉沙、丿の文章与导航",
 
   theme,
 
