@@ -14,9 +14,10 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+    env:
+    - BASE: /vuepress-doc/
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -25,8 +26,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         #cache: 'npm'
         #cache-dependency-path: './package-lock.json'
-    - run: npm i
-    - run: npm run docs:build
+    - run: pnpm i
+    - run: pnpm run docs:build
 
     - name: Deploy to pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
