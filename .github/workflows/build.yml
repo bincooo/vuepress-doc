@@ -26,8 +26,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         #cache: 'npm'
         #cache-dependency-path: './package-lock.json'
-    - run: pnpm i
-    - run: pnpm run docs:build
+    - run: npm i
+    - run: npm run docs:build
 
     - name: Deploy to pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
