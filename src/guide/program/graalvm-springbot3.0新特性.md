@@ -1,11 +1,10 @@
 ---
-title: 对graalvm、springboot3.0一些新特性的探究
+title: 对graalvm、springboot3探究
 head:
   - - meta
     - name: referrer
       content: no-referrer
 ---
-
 
 
 ## 环境

@@ -1,150 +1,75 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { zhNavbar } from "./navbar/index.js";
-import { zhSidebar } from "./sidebar/index.js";
+import navbar from "./navbar.js";
+import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://www.icu-web.tk",
+  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "折戟沉沙、丿",
-    url: "https://www.icu-web.tk",
+    name: "Mr.Hope",
+    url: "https://mister-hope.com",
   },
 
-  iconAssets: "fontawesome",
+  iconAssets: "fontawesome-with-brands",
 
   logo: "http://mms2.baidu.com/it/u=326350594,91254488&fm=253&app=138&f=JPEG&fmt=auto&q=75",
 
-  repo: "https://github.com/bincooo",
+  repo: "bincooo/vuepress-doc",
 
-  docsDir: "",
+  docsDir: "src",
 
-  navbarLayout: {
-    left: ["Brand"],
-    center: ["Links"],
-    right: ["Search", "Repo", "Outlook"]
-  },
+  // 导航栏
+  navbar,
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  // 侧边栏
+  sidebar,
 
-  breadcrumbIcon: true,
+  // 页脚
+  // footer: "默认页脚",
+  displayFooter: true,
 
-  themeColor: {
-    yellow: "#FEC201",
-    pink: "#EF699F",
-    purple: "#684CCE",
-    orange: "#FF8C3D"
-  },
-
-  fullscreen: true,
-
-  backToTop: true,
-
-  lastUpdated: true,
-
-  locales: {
-    /**
-     * Chinese locale config
-     */
-    "/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: false,
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
+  // 加密配置
+  encrypt: {
+    config: {
+      // "/demo/encrypt.html": ["1234"],
     },
   },
 
-  blog: {
-    avatar: "http://mms2.baidu.com/it/u=326350594,91254488&fm=253&app=138&f=JPEG&fmt=auto&q=75",
-    name: "折戟沉沙、丿の文章",
-    roundAvatar: true,
-    description: "书山有路勤为径，学海无崖苦作舟。",
-    sidebarDisplay: "mobile",
-    articlePerPage: 7,
-    timeline: "折戟沉沙、丿の时光机"
+  // 多语言配置
+  metaLocales: {
+    editLink: "在 GitHub 上编辑此页",
   },
 
+  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
+  // hotReload: true,
+
+  // 在这里配置主题提供的插件
   plugins: {
-    // If you don’t need comment feature, you can remove following option
-    // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
-    // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
+    // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     comment: {
-      /**
-       * Using Giscus
-       */
       provider: "Giscus",
       repo: "bincooo/notes",
       repoId: "MDEwOlJlcG9zaXRvcnkzNTY4NjczNDU=",
       category: "General",
       categoryId: "DIC_kwDOFUVdEc4CS-3r",
-      
-
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
-      
-
-      /**
-       * Using Waline
-       */
-      // provider: "Waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
     },
 
-    blog: {
-      autoExcerpt: true,
-      filter: (page) => {
-        return page.filePathRelative && page.filePathRelative.startsWith("blogs/")
-      }
+    components: {
+      components: ["Badge", "VPCard"],
     },
 
-    components: [
-      "Badge",
-      "BiliBili",
-      "PDF"
-    ],
-
-    copyCode: {
-      showInMobile: true,
-      duration: 3000,
-      pure: false
-    },
-
-    // Disable features you don’t want here
+    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
       codetabs: true,
-      container: true,
+      component: true,
       demo: true,
-      echarts: true,
       figure: true,
-      flowchart: true,
-      gfm: true,
-      imageLazyload: true,
-      imageSize: true,
+      imgLazyload: true,
+      imgSize: true,
       include: true,
-      katex: true,
       mark: true,
-      mermaid: true,
-      playground: {
-        presets: ["ts", "vue"],
-      },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
       stylize: [
         {
           matcher: "Recommended",
@@ -161,15 +86,53 @@ export default hopeTheme({
       sub: true,
       sup: true,
       tabs: true,
+      tasklist: true,
       vPre: true,
-      vuePlayground: true,
+
+      // 在启用之前安装 chart.js
+      // chart: true,
+
+      // insert component easily
+
+      // 在启用之前安装 echarts
+      // echarts: true,
+
+      // 在启用之前安装 flowchart.ts
+      // flowchart: true,
+
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+
+      // 在启用之前安装 katex
+      // katex: true,
+
+      // 在启用之前安装 mathjax-full
+      // mathjax: true,
+
+      // 在启用之前安装 mermaid
+      // mermaid: true,
+
+      // playground: {
+      //   presets: ["ts", "vue"],
+      // },
+
+      // 在启用之前安装 reveal.js
+      // revealJs: {
+      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+      // },
+
+      // 在启用之前安装 @vue/repl
+      // vuePlayground: true,
+
+      // install sandpack-vue3 before enabling it
+      // sandpack: true,
     },
 
-    // uncomment these if you want a pwa
+    // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     // pwa: {
     //   favicon: "/favicon.ico",
     //   cacheHTML: true,
-    //   cachePic: true,
+    //   cacheImage: true,
     //   appendBase: true,
     //   apple: {
     //     icon: "/assets/icon/apple-icon-152.png",
@@ -214,12 +177,6 @@ export default hopeTheme({
     //             src: "/assets/icon/guide-maskable.png",
     //             sizes: "192x192",
     //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //           {
-    //             src: "/assets/icon/guide-monochrome.png",
-    //             sizes: "192x192",
-    //             purpose: "monochrome",
     //             type: "image/png",
     //           },
     //         ],

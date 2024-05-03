@@ -1,5 +1,5 @@
 ---
-title: cloudflared免实名给服务器使用域名
+title: cloudflared免实名使用域名
 head:
   - - meta
     - name: referrer

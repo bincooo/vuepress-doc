@@ -1,19 +1,20 @@
-import { defineUserConfig } from "vuepress";
+import { defineUserConfig } from "vuepress/cli";
 import { searchPlugin } from "@vuepress/plugin-search";
 import theme from "./theme.js";
 
-export default defineUserConfig({
-  base: "/vuepress-doc/",
+const base = (process.env["BASE"] as "/" | `/${string}/`) || "/";
 
-  locales: {
-    "/": {
-      lang: "zh-CN",
-      title: "折戟沉沙、丿",
-      description: "折戟沉沙、丿の文章与导航",
-    },
-  },
+export default defineUserConfig({
+  base,
+
+  lang: "zh-CN",
+  title: "折戟沉沙、丿",
+  description: "vuepress-theme-hope 的文档演示",
 
   theme,
+
+  // 和 PWA 一起启用
+  shouldPrefetch: false,
 
   plugins: [
     searchPlugin({
@@ -27,6 +28,4 @@ export default defineUserConfig({
       isSearchable: (page) => page.path !== "/"
     })
   ],
-  
-  shouldPrefetch: false,
 });
