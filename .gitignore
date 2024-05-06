@@ -19,3 +19,5 @@ package-lock.json
 
 yarn.lock
 .yarn/
+
+pnpm-lock.yaml
