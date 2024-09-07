@@ -25,7 +25,7 @@ highlights:
       - title: 阿里小站
         icon: clapperboard
         details: 阿里小站-阿里云盘资源共享站
-        link: https://alyunpan.com
+        link: https://pan666.net
 
       - title: アニメ新番組
         icon: tape
