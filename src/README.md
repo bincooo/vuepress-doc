@@ -15,7 +15,7 @@ actions:
     type: primary
 
   - text: 网盘 🪫
-    link: https://www.1micro.top/alist
+    link: https://www.1micro.top/olist
 
 highlights:
   - bgImageStyle:
